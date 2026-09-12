@@ -1,0 +1,49 @@
+{
+  "equipment": {
+    "item-001": {
+      "name": "Projector",
+      "quantity": 3,
+      "location": "Room 101",
+      "condition": "Good",
+      "available": true,
+      "photo": "",
+      "createdAt": 1757700000000
+    },
+    "item-002": {
+      "name": "HDMI Cable",
+      "quantity": 12,
+      "location": "Storage Cabinet A",
+      "condition": "Fair",
+      "available": true,
+      "photo": "",
+      "createdAt": 1757700100000
+    },
+    "item-003": {
+      "name": "Whiteboard Marker Set",
+      "quantity": 8,
+      "location": "Room 203",
+      "condition": "Good",
+      "available": false,
+      "photo": "",
+      "createdAt": 1757700200000
+    },
+    "item-004": {
+      "name": "Laptop (Dell Latitude)",
+      "quantity": 5,
+      "location": "IT Office",
+      "condition": "Damaged",
+      "available": false,
+      "photo": "",
+      "createdAt": 1757700300000
+    },
+    "item-005": {
+      "name": "Extension Cord",
+      "quantity": 6,
+      "location": "Storage Cabinet B",
+      "condition": "Good",
+      "available": true,
+      "photo": "",
+      "createdAt": 1757700400000
+    }
+  }
+}
