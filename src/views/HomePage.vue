@@ -111,18 +111,14 @@ const handleDelete = async (item: Equipment) => {
     message: `Are you sure you want to delete "${item.name}"?`,
     buttons: [
       { text: "Cancel", role: "cancel" },
-      {
-        text: "Delete",
-        role: "destructive",
-        handler: async () => {
-          await deleteEquipment(item.id as string);
-          // Clear the edit form if the deleted item was being edited.
-          if (editing.value?.id === item.id) editing.value = null;
-        },
-      },
+      { text: "Delete", role: "destructive" },
     ],
   });
   await alert.present();
+  const { role } = await alert.onDidDismiss();
+  if (role !== "destructive") return;
+  await deleteEquipment(item.id);
+  if (editing.value?.id === item.id) editing.value = null;
 };
 </script>
 <style scoped>
